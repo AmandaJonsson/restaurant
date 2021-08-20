@@ -4,11 +4,15 @@ import {Bars} from './NavbarElements';
 import {NavMenu} from './NavbarElements';
 import {NavLink} from './NavbarElements';
 import {NavBtnLink} from './NavbarElements';
+import {Header} from './NavbarElements';
 
 const Navbar = () => {
     return (
         <>
             <Nav>
+            <Header>
+                <h1>Antonio's</h1>
+            </Header>
                 <Bars />
                 <NavMenu>
                     <NavLink to='/Home' activeStyle>

@@ -4,8 +4,19 @@ import styled from 'styled-components';
 import img from './header-image.jpg';
 
 
+export const Header = styled.nav`
+color: #FFFFFF;
+font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-size: 36px;
+
+
+`;
+
 export const Nav = styled.nav`
 background-image: url(${img});
+background-position: center;
+background-size: cover;
 height: 600px;
 display: flex;
 justify-content: space-between;
@@ -17,18 +28,21 @@ resizeMode: 'contain',
 
 export const NavLink = styled(Link)`
   color: #FFFFFF;
-  font-family: 'Dancing Script', cursive;
-  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
   margin-top:30px;
   float: right;
   display: flex;
+  float: right;
   align-items: right;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #000000;
+  color: #000000;
   }
 `;
 
@@ -48,6 +62,7 @@ export const Bars = styled(FaBars)`
 
 export const NavMenu = styled.div`
   display: flex;
+  float: right;
   align-items: center;
   margin-right: -24px;
   white-space: nowrap; */
